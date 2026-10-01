@@ -5,6 +5,7 @@ export default function VarEstado() {
     const [texto1, setTexto1] = useState("")
     const [texto2, setTexto2] = useState("")
     const [cor, setCor] = useState("")
+    const[check, setCheck] = useState(false)
 
     function pegarTexto(e) {
         setTexto1(e.target.value);
@@ -15,6 +16,9 @@ export default function VarEstado() {
         setTexto2(texto1)
     }
 
+    function MudarCheck(e){
+        setCheck(e.target.checked)
+    }
 
     return (
         <div className="pagina-varEstado">
@@ -32,6 +36,12 @@ export default function VarEstado() {
                     <p>A cor que voce escolheu foi {cor}</p>
                 </div>
 
+            </section>
+
+
+            <section className="ex">
+                <p>O Robson adora a Info C? {check ?"Sim" : "Não"} <br/></p>
+                <input type="checkbox" onChange={MudarCheck} />
             </section>
         </div>
     );
