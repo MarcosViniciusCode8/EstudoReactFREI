@@ -1,6 +1,7 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import App from './pages/App/App.jsx';
 import VarEstado from './pages/varEstado/Index.jsx';
+import Components from "./pages/testecomponents/Index.jsx";
 
 export default function Nav(){
     return(
@@ -8,6 +9,7 @@ export default function Nav(){
     <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/variavelestado" element={<VarEstado/>}/>
+         <Route path="/components" element={<Components/>}/>
     </Routes>
     </BrowserRouter>
     )

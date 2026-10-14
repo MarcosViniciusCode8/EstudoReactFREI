@@ -10,6 +10,8 @@ export default function App() {
         <div className='paginas'>
           <h2>Outras páginas:</h2>
           <Link to="variavelestado">VarEstado</Link>
+          <br />
+          <Link to="components">Components</Link>
         </div>
       </nav>
     </div>
